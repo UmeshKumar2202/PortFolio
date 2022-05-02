@@ -1,6 +1,19 @@
-title: Minimal theme
+title: <p align="center"> UMESH KUMAR KOMATI </p>
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+
+description:
+  <p align="center">
+  <a href="pdf/resume.pdf">Resume</a> |
+  <a href="">LinkedIn</a> |
+  <a href="https://github.com/UmeshKumar2202">GitHub</a>
+  
+  <br>
+  I'm working on test automation of web development through selenium.
+  I'm also work with Etl testing and SQL.
+  I have experience from Aug 2021 in Accenture Private Limmited.
+  <br>
+  </p>
+
+
+
 theme: jekyll-theme-minimal
