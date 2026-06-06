@@ -400,7 +400,33 @@ address { font-style: normal; }
   margin-bottom: var(--space-xs);
 }
 
-.hero__title { margin-bottom: var(--space-md); }
+.hero__profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.hero__name-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title { 
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.hero__greeting {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  font-weight: 400;
+}
 
 .hero__name {
   display: block;
@@ -408,13 +434,24 @@ address { font-style: normal; }
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
+  background: transparent;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
-.hero__role { font-size: var(--text-xl); font-weight: 600; color: var(--accent-light); margin-bottom: var(--space-lg); min-height: 1.5em; }
+.hero__role { 
+  font-size: var(--text-lg); 
+  font-weight: 600; 
+  color: var(--accent-light); 
+  margin-bottom: 0;
+  min-height: auto;
+}
+
+.hero__role-text {
+  display: block;
+}
 
 .hero__summary { font-size: var(--text-lg); color: var(--text-secondary); max-width: 32rem; margin-bottom: var(--space-2xl); }
 

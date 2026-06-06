@@ -13,15 +13,6 @@
         Available for senior AI &amp; data roles
       </div>
 
-      <h1 class="hero__title" id="hero-heading">
-        <span class="hero__greeting">Hi, I'm</span>
-        <span class="hero__name">{{ site.title }}</span>
-      </h1>
-
-      <p class="hero__role">
-        <span class="hero__role-text" id="hero-role-text">{{ site.tagline }}</span>
-      </p>
-
       <p class="hero__summary">
         I architect production-grade ML pipelines, GenAI systems, and scalable data platforms
         for healthcare and enterprise — turning complex datasets into measurable business impact.
@@ -49,20 +40,32 @@
     </div>
 
     <div class="hero__visual reveal reveal--delay">
-      <div class="hero__card glass">
-        <img
-          class="hero__photo"
-          src="{{ site.profile_image | relative_url }}"
-          alt="Portrait of {{ site.title }}"
-          width="320"
-          height="320"
-          loading="eager"
-          decoding="async"
-        >
-        <div class="hero__card-glow" aria-hidden="true"></div>
-        <div class="hero__card-meta">
-          <span class="hero__card-role">Software Engineering Senior Analyst</span>
-          <span class="hero__card-company">Evernorth Health Services</span>
+      <div class="hero__profile-section">
+        <div class="hero__card glass">
+          <img
+            class="hero__photo"
+            src="{{ site.profile_image | relative_url }}"
+            alt="Portrait of {{ site.title }}"
+            width="320"
+            height="320"
+            loading="eager"
+            decoding="async"
+          >
+          <div class="hero__card-glow" aria-hidden="true"></div>
+          <div class="hero__card-meta">
+            <span class="hero__card-role">Software Engineering Senior Analyst</span>
+            <span class="hero__card-company">Evernorth Health Services</span>
+          </div>
+        </div>
+        
+        <div class="hero__name-container">
+          <h1 class="hero__title" id="hero-heading">
+            <span class="hero__greeting">Hi, I'm</span>
+            <span class="hero__name">{{ site.title }}</span>
+          </h1>
+          <p class="hero__role">
+            <span class="hero__role-text" id="hero-role-text">{{ site.tagline }}</span>
+          </p>
         </div>
       </div>
 
