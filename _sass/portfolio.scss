@@ -430,7 +430,7 @@ address { font-style: normal; }
 
 .hero__visual { position: relative; display: flex; justify-content: center; align-items: center; }
 
-.hero__card { position: relative; padding: var(--space-sm); border-radius: var(--radius-xl); overflow: hidden; }
+.hero__card { position: relative; padding: var(--space-sm); border-radius: var(--radius-xl); overflow: visible; }
 
 .hero__photo { width: min(320px, 100%); aspect-ratio: 1; object-fit: cover; border-radius: calc(var(--radius-xl) - 4px); }
 
@@ -446,17 +446,31 @@ address { font-style: normal; }
 
 .hero__card-meta {
   position: absolute;
-  bottom: -60px;  /* Move down by changing bottom value */
-  left: var(--space-lg); right: var(--space-lg);
-  padding: var(--space-md);
-  background: #000000;  /* Black background */
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-md);
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  text-align: center;
 }
 
-.hero__card-role { display: block; font-size: var(--text-sm); font-weight: 600; color: #ffffff; }  /* White text */
-.hero__card-company { font-size: var(--text-xs); color: #ffffff; }  /* White text */
+.hero__card-role {
+  display: block;
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: var(--space-xs);
+}
+
+.hero__card-company {
+  font-size: var(--text-sm);
+  color: #ffffff;
+  font-weight: 500;
+}
 
 .hero__float {
   position: absolute;
@@ -470,9 +484,9 @@ address { font-style: normal; }
   animation: float-badge 6s ease-in-out infinite;
 }
 
-.hero__float--1 { top: 15%; right: -5%; }
-.hero__float--2 { bottom: 10%; left: -10%; animation-delay: -2s; }
-.hero__float--3 { top: 60%; right: -15%; animation-delay: -4s; }
+.hero__float--1 { top: 20%; right: -5%; }
+.hero__float--2 { bottom: 15%; left: -10%; animation-delay: -2s; }
+.hero__float--3 { top: 65%; right: -15%; animation-delay: -4s; }
 .hero__float-icon { font-size: var(--text-sm); color: var(--accent-light); }
 
 @keyframes float-badge {
