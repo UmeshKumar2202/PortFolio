@@ -412,22 +412,33 @@ address { font-style: normal; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
 }
 
-.hero__name-container {
+..hero__name-container {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--space-xs);
+  margin-top: 1rem;
+}
+
+.hero__role-title {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  text-transform: uppercase;
 }
 
 .hero__title {
-  margin-bottom: var(--space-md);
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 0.35rem;
 }
 
 .hero__name {
