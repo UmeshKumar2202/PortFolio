@@ -1,0 +1,51 @@
+<section class="section" id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <header class="section__header reveal">
+      <span class="section__eyebrow">Projects</span>
+      <h2 class="section__title" id="projects-heading">Selected work</h2>
+      <p class="section__subtitle">Production systems and research spanning GenAI, data engineering, and ML.</p>
+    </header>
+
+    <div class="projects__grid">
+      {% for project in site.data.projects %}
+      <article class="project-card glass reveal {% if project.featured %}project-card--featured{% endif %}" style="--reveal-delay: {{ forloop.index0 | times: 80 }}ms">
+        <div class="project-card__header">
+          <span class="project-card__category">{{ project.category }}</span>
+          {% if project.featured %}
+          <span class="project-card__badge">Featured</span>
+          {% endif %}
+        </div>
+
+        <h3 class="project-card__title">{{ project.title }}</h3>
+        <p class="project-card__desc">{{ project.description }}</p>
+
+        {% if project.metrics %}
+        <dl class="project-card__metrics">
+          {% for metric in project.metrics %}
+          <div class="project-card__metric">
+            <dt>{{ metric.label }}</dt>
+            <dd>{{ metric.value }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+        {% endif %}
+
+        <ul class="project-card__tech" role="list" aria-label="Technologies used">
+          {% for tech in project.tech %}
+          <li>{{ tech }}</li>
+          {% endfor %}
+        </ul>
+
+        <footer class="project-card__footer">
+          <a class="project-card__link" href="{{ project.github }}" target="_blank" rel="noopener noreferrer">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </footer>
+
+        <div class="project-card__shine" aria-hidden="true"></div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

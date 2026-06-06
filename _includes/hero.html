@@ -1,0 +1,87 @@
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+    <div class="hero__grid"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <div class="hero__badge glass">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        Available for senior AI &amp; data roles
+      </div>
+
+      <h1 class="hero__title" id="hero-heading">
+        <span class="hero__greeting">Hi, I'm</span>
+        <span class="hero__name">{{ site.title }}</span>
+      </h1>
+
+      <p class="hero__role">
+        <span class="hero__role-text" id="hero-role-text">{{ site.tagline }}</span>
+      </p>
+
+      <p class="hero__summary">
+        I architect production-grade ML pipelines, GenAI systems, and scalable data platforms
+        for healthcare and enterprise — turning complex datasets into measurable business impact.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#projects">View Projects</a>
+        <a class="btn btn--ghost" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+
+      <dl class="hero__stats">
+        <div class="hero__stat glass">
+          <dt class="hero__stat-value">5+</dt>
+          <dd class="hero__stat-label">Years Experience</dd>
+        </div>
+        <div class="hero__stat glass">
+          <dt class="hero__stat-value">20+</dt>
+          <dd class="hero__stat-label">ML Projects</dd>
+        </div>
+        <div class="hero__stat glass">
+          <dt class="hero__stat-value">15%</dt>
+          <dd class="hero__stat-label">Accuracy Gains</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero__visual reveal reveal--delay">
+      <div class="hero__card glass">
+        <img
+          class="hero__photo"
+          src="{{ site.profile_image | relative_url }}"
+          alt="Portrait of {{ site.title }}"
+          width="320"
+          height="320"
+          loading="eager"
+          decoding="async"
+        >
+        <div class="hero__card-glow" aria-hidden="true"></div>
+        <div class="hero__card-meta">
+          <span class="hero__card-role">Senior Analyst</span>
+          <span class="hero__card-company">Evernorth Health Services</span>
+        </div>
+      </div>
+
+      <div class="hero__float hero__float--1 glass" aria-hidden="true">
+        <span class="hero__float-icon">⚡</span>
+        <span class="hero__float-text">GenAI · LLM</span>
+      </div>
+      <div class="hero__float hero__float--2 glass" aria-hidden="true">
+        <span class="hero__float-icon">◈</span>
+        <span class="hero__float-text">Airflow · ETL</span>
+      </div>
+      <div class="hero__float hero__float--3 glass" aria-hidden="true">
+        <span class="hero__float-icon">▲</span>
+        <span class="hero__float-text">PyTorch · ML</span>
+      </div>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#about" aria-label="Scroll to about section">
+    <span class="hero__scroll-line" aria-hidden="true"></span>
+  </a>
+</section>

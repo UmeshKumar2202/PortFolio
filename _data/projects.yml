@@ -1,0 +1,73 @@
+- title: AI-Powered Spend Analytics Chatbot
+  category: GenAI · NLP · Analytics
+  description: >-
+    LLM-powered chatbot enabling business users to query spend data in natural language,
+    with real-time KPI dashboards and NL-to-SQL translation for self-service analytics.
+  tech: [Python, LLM, NLP, SQL, React, Tableau, AWS]
+  github: https://github.com/UmeshKumar2202
+  featured: true
+  metrics:
+    - label: Reporting time
+      value: "−60%"
+    - label: Self-service queries
+      value: "10K+"
+
+- title: TAMR Workforce Analytics Pipeline
+  category: Data Engineering · MLOps
+  description: >-
+    End-to-end Airflow orchestration integrating ML model outputs into downstream ETL,
+    with TAMR clustering and Tableau visualizations for workforce analytics.
+  tech: [Python, Airflow, SQL, TAMR, Tableau, AWS Lambda]
+  github: https://github.com/UmeshKumar2202
+  featured: true
+  metrics:
+    - label: Pipeline automation
+      value: "100%"
+    - label: Monthly ETL runs
+      value: "Automated"
+
+- title: FAH Claims Prediction Engine
+  category: Machine Learning · Healthcare
+  description: >-
+    Predictive model for insurance claim values and coverage types — from EDA and feature
+    engineering through model tuning on AWS Lambda with production-grade data workflows.
+  tech: [Python, AWS Lambda, SQL, S3, Pandas, Scikit-learn]
+  github: https://github.com/UmeshKumar2202
+  featured: true
+  metrics:
+    - label: Model accuracy
+      value: "+15%"
+    - label: Data sources
+      value: "Multi-source"
+
+- title: Healthcare Finance ETL & Automation
+  category: Test Automation · ETL
+  description: >-
+    Robust Selenium-Java automation framework with Cucumber BDD, Jenkins CI pipelines,
+    and SQL-driven ETL validation for healthcare finance applications.
+  tech: [Java, Selenium, Cucumber, Jenkins, SQL, TestNG]
+  github: https://github.com/UmeshKumar2202
+  featured: false
+  metrics:
+    - label: Test coverage
+      value: "↑ 40%"
+    - label: Manual effort
+      value: "−35%"
+
+- title: Coverage & Claims Anomaly Detection
+  category: ML · Insurance Analytics
+  description: >-
+    ML model to trace data abnormalities in coverage and claims datasets with numerous
+    null values, producing reliable monthly coverage and claims outputs.
+  tech: [Python, SQL, Pandas, Random Forest, ETL]
+  github: https://github.com/UmeshKumar2202
+  featured: false
+
+- title: Telecom Churn & Time Series Analysis
+  category: Deep Learning · Research
+  description: >-
+    Academic research applying LSTM networks and time-series forecasting for telecom
+    churn prediction — part of MSc Machine Learning & AI at Liverpool John Moores University.
+  tech: [PyTorch, LSTM, Pandas, Scikit-learn, PySpark]
+  github: https://github.com/UmeshKumar2202
+  featured: false

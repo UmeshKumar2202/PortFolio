@@ -1,0 +1,43 @@
+<section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+    <header class="section__header reveal">
+      <span class="section__eyebrow">Skills</span>
+      <h2 class="section__title" id="skills-heading">Technical toolkit</h2>
+    </header>
+
+    <div class="skills__grid">
+      {% for category in site.data.skills.categories %}
+      <div class="skills__group glass reveal" style="--reveal-delay: {{ forloop.index0 | times: 60 }}ms">
+        <h3 class="skills__group-title">{{ category.name }}</h3>
+        <ul class="skills__list" role="list">
+          {% for item in category.items %}
+          <li class="skills__tag">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="skills__extras reveal">
+      <div class="skills__extra glass">
+        <h3 class="skills__extra-title">Certifications</h3>
+        <ul role="list">
+          {% for cert in site.data.skills.certifications %}
+          <li>{{ cert }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="skills__extra glass">
+        <h3 class="skills__extra-title">Education</h3>
+        <ul class="skills__edu" role="list">
+          {% for edu in site.data.skills.education %}
+          <li>
+            <strong>{{ edu.degree }}</strong>
+            <span>{{ edu.school }} · {{ edu.period }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

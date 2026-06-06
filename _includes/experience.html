@@ -1,0 +1,33 @@
+<section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+  <div class="container">
+    <header class="section__header reveal">
+      <span class="section__eyebrow">Experience</span>
+      <h2 class="section__title" id="experience-heading">Where I've delivered impact</h2>
+    </header>
+
+    <div class="timeline">
+      {% for job in site.data.experience %}
+      <article class="timeline__item reveal" style="--reveal-delay: {{ forloop.index0 | times: 100 }}ms">
+        <div class="timeline__marker" aria-hidden="true"></div>
+        <div class="timeline__card glass">
+          <header class="timeline__header">
+            <div>
+              <h3 class="timeline__role">{{ job.role }}</h3>
+              <p class="timeline__company">{{ job.company }}</p>
+            </div>
+            <div class="timeline__meta">
+              <time class="timeline__period">{{ job.period }}</time>
+              <span class="timeline__location">{{ job.location }}</span>
+            </div>
+          </header>
+          <ul class="timeline__highlights" role="list">
+            {% for highlight in job.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

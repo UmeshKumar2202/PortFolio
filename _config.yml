@@ -1,19 +1,18 @@
-title: <p align="center"> UMESH KUMAR KOMATI </p>
-logo: /assets/img/logo.png
+title: Umesh Kumar Komati
+tagline: AI & Data Engineering
+email: umeshkumarkomati@gmail.com
+phone: "+91 7674062202"
+location: Hyderabad, India
+resume_url: /pdf/Resume.pdf
+profile_image: /assets/img/profile.jpeg
 
-description:
-  <a href="pdf/resume.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/umesh-kumar-komati-25ab561b3">LinkedIn</a> |
-  <a href="https://github.com/UmeshKumar2202">GitHub</a>
-  
-  <br>
-  I'm working on test automation of web development through selenium.
-  I'm also work with Etl testing and SQL.
-  
-  
-  <br>
-  </p>
+social:
+  linkedin: https://www.linkedin.com/in/umesh-kumar-komati-25ab561b3
+  github: https://github.com/UmeshKumar2202
+  email: mailto:umeshkumarkomati@gmail.com
 
+description: >-
+  Senior AI & Data Engineer building production ML pipelines, GenAI systems,
+  and scalable analytics platforms for healthcare and enterprise.
 
-
-theme: jekyll-theme-minimal
+# Custom portfolio — no remote theme

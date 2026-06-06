@@ -1,0 +1,31 @@
+categories:
+  - name: AI & Machine Learning
+    items: [LLM, NLP, BERT, LSTM, PyTorch, TensorFlow, Scikit-learn, MLOps]
+  - name: Data Engineering
+    items: [Airflow, PySpark, ETL, SQL, AWS Lambda, S3, Data Pipelines]
+  - name: Languages & Frameworks
+    items: [Python, Java, Oracle SQL, React]
+  - name: Cloud & DevOps
+    items: [Azure, AWS, Jenkins, Git, CI/CD, Docker]
+  - name: Analytics & Viz
+    items: [Tableau, Matplotlib, Seaborn, Pandas, NumPy]
+  - name: Test Automation
+    items: [Selenium, Cucumber, TestNG, Opkey]
+
+certifications:
+  - AZ-900 Microsoft Azure Fundamentals
+  - Oracle Certified Foundation Associate
+
+education:
+  - degree: MSc Machine Learning & AI
+    school: Liverpool John Moores University
+    period: Mar 2022 — Jul 2024
+    location: Liverpool, UK
+  - degree: PG Diploma in ML & AI
+    school: IIIT Bangalore
+    period: Mar 2022 — Jun 2023
+    location: Bengaluru, IN
+  - degree: B.E. Electronics & Communication
+    school: MVSR Engineering College, Osmania University
+    period: Jun 2018 — May 2021
+    location: Hyderabad, IN
