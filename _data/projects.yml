@@ -32,8 +32,6 @@
   tech: [Python, AWS Lambda, SQL, S3, Pandas, Scikit-learn]
   featured: true
   metrics:
-    - label: Model accuracy
-      value: "+15%"
     - label: Data sources
       value: "Multi-source"
 
