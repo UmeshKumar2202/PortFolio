@@ -415,7 +415,7 @@ address { font-style: normal; }
   gap: var(--space-md);
 }
 
-..hero__name-container {
+.hero__name-container {
   text-align: center;
   display: flex;
   flex-direction: column;
