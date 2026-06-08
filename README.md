@@ -75,7 +75,6 @@ I'm always open to discussing:
 - Collaboration & Opportunities
 
 **Email:** umeshkumarkomati@gmail.com  
-**Phone:** +91 7674062202
 
 ---
 
