@@ -1,5 +1,25 @@
-_site
-.sass-cache
+# Build & cache
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# Dependencies
 Gemfile.lock
 *.gem
-.jekyll-cache
+
+# Legacy CI/CD (removed)
+.travis.yml
+.rubocop.yml
+
+# IDE & Environment
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+.env
+.env.local
+
+# OS
+Thumbs.db
+*.log
